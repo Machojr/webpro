@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        *{
+            box-sizing: border-box;
+            text-align: center;
+        }
+        input[type=email]{
+            display: inline-block;
+            border-radius: 4px;
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        input[type=password] {
+            border-radius: 4px;
+            padding: 8px;
+            border: 1px solid black;
+            text-align: left;
+        }
+        input [type=submit] {
+            background-color: yellow;
+            cursor: pointer;
+            border-radius: 4px;
+            padding: 8px;
+        }
+        input[type=submit]:hover {
+            background-color: aqua;
+            border-radius: 4px;
+            padding: 8px;
+        }
+        #form {
+            background-size: 1000px;
+            background-color: white;
+            height: 300px;
+            width: 40%;
+            padding-left: 3%;
+            margin-left: 30%; 
+            padding: 20px;
+            margin-top: 0%;
+
+        }
+        .flex-container {
+            margin-right: 30%;
+            text-align: center;
+            
+        }
+        body {
+            background-color: #f2f2f2;
+        }
+        #body {
+            margin-top: 80px;
+        }
+        #end {
+            display: inline;
+            margin: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="body">
+    <h1 style="font-family: cursive;background-color: burlywood; padding: 20px;margin-left: 30%; margin-right: 30%; margin-bottom: 0px;">Tech Sellers</h1>
+    <div id="form"> 
+        <form style="max-height:400px ; padding: 30px;">
+            <div class="flex-container">
+                <h1 style="font-size: small; float: inline-start;">Username Or email</h1><br>
+                <input type="email" placeholder="Enter your Username or Email" size="40"><br><br>
+                <h1 style="font-size: small; float: inline-start;">Password</h1>
+                <input type="password" placeholder="enter your password" size="40" ><br><br>
+                <button type="submit" value="submit" name="submit" style="size: 40; width: 350px; padding: 8px;">Login</button>
+            </div>
+            
+        </form>
+    </div>
+   </div> 
+   <div id="end">
+       <h1 style="font-size: small; color: burlywood;" >Don't have an account?</h1>
+       <h1 style="color: blue; font-size: small;">Sign up now</h1>
+   </div>
+</body>
+</html>
