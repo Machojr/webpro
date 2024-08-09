@@ -4,43 +4,211 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            padding: 10px;
+            contain: layout;
+            padding-top: 50px;
+            margin-left: 40px;
+            contain: content;
+        }
+        .flex-container2 {
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            padding: 10px;
+            contain: layout;
+            padding-top: 5px;
+            margin-left: 40px;
+            contain: content;   
+        }
+        .flex-container3 {
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            padding: 10px;
+            contain: layout;
+            padding-top: 5px;
+            margin-left: 40px;
+            contain: content;  
+        }
+        ul{ 
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 5px;
+        }
+        li {
+            float: right;
+            margin-top: 5px;
+        }
+        li  a {
+            text-decoration: none;
+            display: block;
+            padding:20px;
+            margin-top: 5px;
+            padding-top: 5px;
+            
+        }
+        li :hover {
+            color: red;
+        }
+        .p1 {
+            background-color: white;
+            border-radius: 8px;
+            border: 1px solid black;      
+            padding: 10px;
+            background-color: burlywood;
+            margin-right: 10px;
+            width: 280px;
+            padding-right: 0px;
+
+
+        }
+        .p2 {
+            background-color: white;
+            border-radius: 8px;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: yellowgreen;
+            margin-right: 10px;
+            width: 280px;
+        }
+        .p3 {
+            background-color: white;
+            border-radius: 8px;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: bisque;
+            margin-right: 10px;
+            width: 280px;
+            color: black;
+        }
+        .p4 {
+            background-color: white;
+            border-radius: 8px;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: yellow;
+            margin-right: 5px;
+            margin-left: 0px;
+            width: 280px;
+        }
+        body {
+            background-image: url("./px4.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #nav {
+            margin-top: 5px;
+            padding-top: 0px;
+        }
+        .h2 {
+            margin-top: 80px;
+        }
+    </style>
 </head>
 <body>
-    <div  id="nav">
+    <div  id="nav" style="margin-top: 0px;">
         <nav>
             <ul>
-                <li>menu</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li> <a href="home.html">Home</a></li>
             </ul>
         </nav>
     </div>
     <div id="main">
-        <h1>Tech Seller's products</h1>
+        <div class="h1" style="padding-top: 1px;">
+            <h1 style=" font-family: cursive; font-size: 30px; background-color: whitesmoke; border-radius: 15px; border: 1px solid black; margin-top: 3px; " >Ts</h1>
+        </div>
+        <div class="h2">
+            <h1 style="font-size: 50px; text-align: center;color :blueviolet; font-family: Arial, Helvetica, sans-serif;">Welcome to Tech sellers.com!</h1>
+            <p style="font-size: 50px; text-align: center; color: white;"> These are samples of our valuable products:</p>
+        </div>
         <div class="flex-container">
-            <div class="p1">
-                <h1>desktops</h1>
-                <img src="./desktop1.jpg">
-                <p>brands: hp, dell, fujitsu
+            <div class="p1" >
+                <h1 style="font-size: small;">desktops</h1>
+                <img src="./desktop1.jpg" style="width: 263px;">
+                <p>brands: hp, dell, fujitsu<br>
                     cores: coi5-coi9
                 </p>
             </div>
             <div class="p2">
-                <h1>printers</h1>
-                <img src="./printer1.png">
-                <p>lkfhe;wolgekjr
-                    ksagiweaulfhg
+                <h1 style="font-size: small;">printers</h1>
+                <img src="./printer1.png"style="width: 282px;">
+                <p>brands: Epison, canon
                 </p>
             </div>
-            <div class="pg3">
-                <h1>monitors</h1>
-                <img src="./monitor1.png">
+            <div class="p3">
+                <h1 style="font-size: small;">monitors</h1>
+                <img src="./monitor1.png" style="width: 284px;">
                 <p>brand: ALIONS, HISIENCE, HP, LG etc</p>
             </div>
-            <div class="pg4">
-                
+            <div class="p4">
+                <h1 style="font-size: small;">Laptops</h1>
+                <img src="./laptop1.jpg" style="width: 280px;">
+                <p>brands : hp, Dell, fujitsu, Lenovo etc<br>cores: coi5-coi9</p>
+            </div>
+            
+        </div>
+        <div class="flex-container2">
+            <div class="p1" >
+                <h1 style="font-size: small;">desktops</h1>
+                <img src="./desktop1.jpg" style="width: 263px;">
+                <p>brands: hp, dell, fujitsu<br>
+                    cores: coi5-coi9
+                </p>
+            </div>
+            <div class="p2">
+                <h1 style="font-size: small;">printers</h1>
+                <img src="./printer1.png"style="width: 282px;">
+                <p>brands: Epison, canon
+                </p>
+            </div>
+            <div class="p3">
+                <h1 style="font-size: small;">monitors</h1>
+                <img src="./monitor1.png" style="width: 284px;">
+                <p>brand: ALIONS, HISIENCE, HP, LG etc</p>
+            </div>
+            <div class="p4">
+                <h1 style="font-size: small;">Laptops</h1>
+                <img src="./laptop1.jpg" style="width: 280px;">
+                <p>brands : hp, Dell, fujitsu, Lenovo etc<br>cores: coi5-coi9</p>
+            </div>
+        </div>
+        <div class="flex-container3">
+            <div class="p1" >
+                <h1 style="font-size: small;">desktops</h1>
+                <img src="./desktop1.jpg" style="width: 263px;">
+                <p>brands: hp, dell, fujitsu<br>
+                    cores: coi5-coi9
+                </p>
+            </div>
+            <div class="p2">
+                <h1 style="font-size: small;">printers</h1>
+                <img src="./printer1.png"style="width: 282px;">
+                <p>brands: Epison, canon
+                </p>
+            </div>
+            <div class="p3">
+                <h1 style="font-size: small;">monitors</h1>
+                <img src="./monitor1.png" style="width: 284px;">
+                <p>brand: ALIONS, HISIENCE, HP, LG etc</p>
+            </div>
+            <div class="p4">
+                <h1 style="font-size: small;">Laptops</h1>
+                <img src="./laptop1.jpg" style="width: 280px;">
+                <p>brands : hp, Dell, fujitsu, Lenovo etc<br>cores: coi5-coi9</p>
             </div>
         </div>
     </div>
+    <footer>
+        <div></div>
+    </footer>
 </body>
 </html>
