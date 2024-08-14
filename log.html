@@ -61,28 +61,186 @@
             display: inline;
             margin: auto;
         }
-        
+       
+        @media only screen and (max-width:1100px) and (min-width:720px) {
+            #body {
+                visibility: visible;
+            }
+            #form {
+                background-color: white;
+                height: 300px;
+                width: 90%;
+                padding-left: 3%;
+                margin-left: 5%;
+                padding-right: 5%; 
+                padding: 20px;
+                margin-top: 0%;
+            }
+            #end {
+                display: inline;
+                margin: auto;
+            }
+            .head {
+                margin-left: 5%;
+                padding: 8px;
+                padding-left: 3%;
+                width: 90%;
+                float: top;
+                margin-right: 20%;
+                text-align: center;
+                margin-top: 100px;   
+            }
+            input[type=password] , input[type=email] {
+                width: 143%;
+                padding-left: 70px;
+                padding-right: 100px;
+                border-radius: 4px;
+                border: 1px solid black;
+                text-align: left;
+                size: 40%;
+                float: left;
+            }
+            #body {
+                margin-top: 10px;
+            }
+            button[type=submit]  {
+                width: 143%;
+                padding: 8px;
+                padding-right: 290px;
+                padding-left: 137px;
+                text-align: left;
+                margin-top: 20px;
+                background-color: blue;
+                border-radius: 4px;
+                border-color: transparent;
+                color: white;
+                text-decoration: none;
+                font-weight: 100;
+                margin-right: 5px;float: inline-start;
+        }
+        a {
+            color: white;
+            font-weight: 300;
+            text-decoration: none;
+            text-align: center;
+            padding-left: 0px;
+            float: inline-end;
+        }
+        .flex-container > h1 {
+            margin-top: 50px;
+        }
+        }
+        @media only screen and (max-width:719px){
+            #form {
+                background-color: white;
+                height: 300px;
+                width: 100%;
+                padding-left: 3%;
+                margin-left: 5%;
+                padding-right: 5%; 
+                padding: 20px;
+                margin-top: 0%;
+            }
+            #end {
+                display: inline;
+                margin: auto;
+            }
+            .head {
+                margin-left: 5%;
+                padding: 8px;
+                padding-left: 3%;
+                width: 100%;
+                float: top;
+                margin-right: 20%;
+                text-align: center;
+                
+            }
+            input[type=password] , input[type=email] {
+                width: 80%;
+                padding-left: 70px;
+                padding-right: 160px;
+                border-radius: 4px;
+                border: 1px solid black;
+                text-align: center;
+                size: 40%;
+                float: left;
+            }
+            #body {
+                margin-top: 10px;
+            }
+            button[type=submit]  {
+                width: 100%;
+                padding: 8px;
+                padding-right: 90px;
+                padding-left: 137px;
+                text-align: left;
+                margin-top: 20px;
+                background-color: blue;
+                border-radius: 4px;
+                border-color: transparent;
+                color: white;
+                text-decoration: none;
+                font-weight: 100;
+                
+        }
+        a {
+            color: white;
+            font-weight: 300;
+            text-decoration: none;
+            text-align: center;
+            padding-left: 0px;
+            float: inline-end;
+        }
+        .flex-container > h1, h2 {
+            margin-top: 50px;
+            float: left;
+        }
+    }
+   
+
+        /* @media only screen and (min-width:1200px){
+            #form {
+                background-color: white;
+                height: 300px;
+                width: 40%;
+                padding-left: 3%;
+                margin-left: 30%; 
+                padding: 20px;
+                margin-top: 0%;
+            }
+            #end {
+                display: inline;
+                margin: auto;
+            }
+            input[type=password] , input[type=email] {
+                width: 35%;
+            }
+            button[type=submit] {
+                width: 35%;
+            }
+        } */
+         
     </style>
 </head>
-<body>
-    <div id="body">
-    <h1 style="font-family: cursive;background-color: burlywood; padding: 20px;margin-left: 30%; margin-right: 30%; margin-bottom: 0px;">Tech Sellers</h1>
-    <div id="form"> 
-        <form style="max-height:400px ; padding: 30px;">
-            <div class="flex-container">
-                <h1 style="font-size: small; float: inline-start;">Username Or email</h1><br>
-                <input type="email" placeholder="Enter your Username or Email" size="40"><br><br>
-                <h1 style="font-size: small; float: inline-start;">Password</h1>
-                <input type="password" placeholder="enter your password" size="40" ><br><br>
-               <button type="submit"  style="size: 40; width: 350px; padding: 8px; text-decoration: none;"><a href="./project.html">Login</a></button>
-            </div>
+    <body>
+        <div id="body">
+            <h1 class="head" style="font-family: cursive;background-color: burlywood; padding: 20px; margin-right: 30%; margin-bottom: 0px;">Tech Sellers</h1>
+            <div id="form"> 
+                <form style="max-height:400px ; ">
+                    <div class="flex-container">
+                        <h1 style="font-size: small; float: left;">Username Or email</h1>
+                        <input type="email" placeholder="Enter your Username or Email" size="40"><br><br>
+                        <h2 style="font-size: small; float: inline-start;">Password</h2>
+                        <input type="password" placeholder="enter your password" size="40" ><br><br>
+                        <button type="submit"  style="text-decoration: none;"><a href= "project.html">Login</a></button>
+                    </div>
 
-        </form>
+                </form>
+            </div>
+    </div> 
+    <div id="end">
+        <h1 class="Qn" style="font-size: small; color: black" >Don't have an account?</h1>
+        <h1 class="Sup" style="color: blue; font-size: small;">Sign up now</h1>
     </div>
-   </div> 
-   <div id="end">
-       <h1 style="font-size: small; color: black" >Don't have an account?</h1>
-       <h1 style="color: blue; font-size: small;">Sign up now</h1>
-   </div>
-</body>
+    </body>
 </html>
